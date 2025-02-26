@@ -32,5 +32,9 @@ public class ProjetoLesgruApplication {
 	public String CoringadaMetodo() {
 		return "Não aguento mais saporra";
 	}
+	
+	public String Fodase() {
+		return "POHA LOCA";
+	}
 
 }
