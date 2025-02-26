@@ -12,16 +12,13 @@ public class ProjetoLesgruApplication {
 		System.out.print("Ola mundo");
 	//Oia a cagada para fazer esse projeto meu cria 
 	}
+	//para de travar caralho
 	public String metodo1() {
-		int i = 2;
-		String s = "Rodrigadas";
-		return i + s + "ta foda";
+		
+		return "ta foda";
 	}
 	
 	public Integer metodo2() {
-		int soma;
-		soma = 1 + 1;
-		if(soma == 2) {return 2;}
 		return 3;
   }
   
