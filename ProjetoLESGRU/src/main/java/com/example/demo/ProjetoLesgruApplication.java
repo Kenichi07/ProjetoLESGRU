@@ -19,7 +19,10 @@ public class ProjetoLesgruApplication {
 	}
 	
 	public Integer metodo2() {
-		return 1+1;
+		int soma;
+		soma = 1 + 1;
+		if(soma == 2) {return 2;}
+		return 3;
 	}
 
 }
