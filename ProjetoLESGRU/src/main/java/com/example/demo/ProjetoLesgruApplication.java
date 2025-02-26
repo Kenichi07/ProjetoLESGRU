@@ -12,6 +12,10 @@ public class ProjetoLesgruApplication {
 		System.out.print("Ola mundo");
 	//Oia a cagada para fazer esse projeto meu cria 
 	}
-	
+	public String gustavoMetodo() {
+		int i = 2;
+		String s = "Rodrigadas";
+		return i + s;
+	}
 
 }
