@@ -10,6 +10,7 @@ public class ProjetoLesgruApplication {
 		SpringApplication.run(ProjetoLesgruApplication.class, args);
 	//alteração 
 		System.out.print("Ola mundo");
+	//Oia a cagada para fazer esse projeto meu cria 
 	}
 	
 
