@@ -17,5 +17,9 @@ public class ProjetoLesgruApplication {
 		String s = "Rodrigadas";
 		return i + s + "ta foda";
 	}
+	
+	public Integer metodo2() {
+		return 1+1;
+	}
 
 }
