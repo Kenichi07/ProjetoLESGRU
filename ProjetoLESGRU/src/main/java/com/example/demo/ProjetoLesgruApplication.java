@@ -9,6 +9,7 @@ public class ProjetoLesgruApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoLesgruApplication.class, args);
 	//alteração 
+		System.out.print("Ola mundo");
 	}
 	
 
