@@ -15,7 +15,7 @@ public class ProjetoLesgruApplication {
 	public String gustavoMetodo() {
 		int i = 2;
 		String s = "Rodrigadas";
-		return i + s;
+		return i + s + "ta foda";
 	}
 
 }
