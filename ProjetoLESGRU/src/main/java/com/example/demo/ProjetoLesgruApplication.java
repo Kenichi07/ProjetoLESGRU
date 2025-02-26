@@ -23,6 +23,10 @@ public class ProjetoLesgruApplication {
 		soma = 1 + 1;
 		if(soma == 2) {return 2;}
 		return 3;
+  }
+  
+	public String joaoMetodo() {
+		return "Vagabunda";
 	}
 
 }
