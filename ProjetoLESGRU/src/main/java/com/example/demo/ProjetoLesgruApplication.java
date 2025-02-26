@@ -26,8 +26,12 @@ public class ProjetoLesgruApplication {
 		return "Vagabunda";
 	}
 
-	public String CoringadaMetodo() {
+	public String CoringadaMetodo() {\
 		return "Não aguento mais saporra";
+	}
+	
+	public String Fodase() {
+		return "POHA LOCA";
 	}
 
 }
