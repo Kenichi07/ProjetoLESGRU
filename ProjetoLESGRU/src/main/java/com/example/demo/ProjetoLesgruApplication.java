@@ -13,14 +13,6 @@ public class ProjetoLesgruApplication {
 	//Oia a cagada para fazer esse projeto meu cria 
 	}
 	//para de travar caralho
-	public String metodo1() {
-		
-		return "ta foda";
-	}
-	
-	public Integer metodo2() {
-		return 3;
-  }
   
 	public String joaoMetodo() {
 		return "Vagabunda";
