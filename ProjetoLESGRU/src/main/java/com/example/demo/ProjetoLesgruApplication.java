@@ -30,4 +30,7 @@ public class ProjetoLesgruApplication {
 		return "Não aguento mais saporra";
 	}
 
+	public void metodo3() {
+		String s = "todo dia tem uma merda";
+	}
 }
