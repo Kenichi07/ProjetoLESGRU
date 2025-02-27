@@ -30,4 +30,8 @@ public class ProjetoLesgruApplication {
 		String s = "todo dia tem uma merda";
 	}
 	
+	public String metodo4() {
+		return "Cadê vc Luquizinho";
+	}
+	
 }
