@@ -30,8 +30,13 @@ public class ProjetoLesgruApplication {
 		System.out.print(s);
 	}
 	
+
 	public Integer metodo5() {
 		return 20 + 25;
+  }
+	public String metodo4() {
+		return "Cadê vc Luquizinho";
+
 	}
 	
 }
