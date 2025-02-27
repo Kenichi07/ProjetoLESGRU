@@ -7,6 +7,15 @@ public class Brinquedo {
 	private Float peso;
 	private Float preco;
 	private String descricao;
+	
+	public Brinquedo(int code, String nome, Float peso, Float preco, String descricao) {
+		super();
+		this.code = code;
+		this.nome = nome;
+		this.peso = peso;
+		this.preco = preco;
+		this.descricao = descricao;
+	}
 	public int getCode() {
 		return code;
 	}
