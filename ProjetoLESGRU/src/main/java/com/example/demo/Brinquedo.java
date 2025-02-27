@@ -1,12 +1,16 @@
 package com.example.demo;
 
 public class Brinquedo {
- 
+	
+	//Atributos
 	private int code;
 	private String nome;
 	private Float peso;
 	private Float preco;
 	private String descricao;
+	
+	//Construtores
+	public Brinquedo() {}
 	
 	public Brinquedo(int code, String nome, Float peso, Float preco, String descricao) {
 		super();
@@ -16,6 +20,8 @@ public class Brinquedo {
 		this.preco = preco;
 		this.descricao = descricao;
 	}
+	
+	//Getters 'n Setters
 	public int getCode() {
 		return code;
 	}
