@@ -21,8 +21,16 @@ public class ProjetoLesgruApplication {
 	public String CoringadaMetodo() {
 		return "Não aguento mais saporra";
 	}
+	
+	public String Fodase() {
+		return "POHA LOCA";
+	}
 
 	public void metodo3() {
 		String s = "todo dia tem uma merda";
 	}
+	public String metodo4() {
+		return "Cadê vc Luquizinho";
+	}
+	
 }
