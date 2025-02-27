@@ -29,8 +29,5 @@ public class ProjetoLesgruApplication {
 	public void metodo3() {
 		String s = "todo dia tem uma merda";
 	}
-	public String metodo4() {
-		return "Cadê vc Luquizinho";
-	}
 	
 }
