@@ -8,29 +8,30 @@ public class ProjetoLesgruApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoLesgruApplication.class, args);
-	//alteração 
 		System.out.print("Ola mundo");
-	//Oia a cagada para fazer esse projeto meu cria 
-	}
-	//para de travar caralho
-  
-	public String joaoMetodo() {
-		return "Vagabunda";
-	}
-
-	public String CoringadaMetodo() {
-		return "Não aguento mais saporra";
+	//Comentario teste
 	}
 	
-	public String Fodase() {
-		return "POHA LOCA";
+  
+	public String metodo1() {
+		return "Metodo 1 excutado";
 	}
 
-	public void metodo3() {
-		String s = "todo dia tem uma merda";
+	public String metodo2() {
+		return "Metodo 2 executado";
 	}
-	public String metodo4() {
-		return "Cadê vc Luquizinho";
+	
+	public String metodo3() {
+		return "Metodo 3 executado";
+	}
+
+	public void metodo4() {
+		String s = "Laboratorio de Engenharia";
+		System.out.print(s);
+	}
+	
+	public Integer metodo5() {
+		return 20 + 25;
 	}
 	
 }
