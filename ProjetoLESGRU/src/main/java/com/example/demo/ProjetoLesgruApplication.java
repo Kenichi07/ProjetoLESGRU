@@ -32,4 +32,5 @@ public class ProjetoLesgruApplication {
 	public String metodo4() {
 		return "Cadê vc Luquizinho";
 	}
+	
 }
