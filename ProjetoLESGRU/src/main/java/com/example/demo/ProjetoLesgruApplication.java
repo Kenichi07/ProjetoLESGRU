@@ -31,7 +31,7 @@ public class ProjetoLesgruApplication {
 	}
 
 	public Integer metodo5() {
-		return 20 + 25;
+		return 20 + 30;
   }
 
 }
