@@ -25,7 +25,7 @@ public class BrinquedoController {
 	}
 	
 	@GetMapping("/brinquedos/{id}")
-	public Brinquedo getByRaAluno(@PathVariable("id") int id) {
+	public Brinquedo getByCode(@PathVariable("id") int id) {
 		return brinquedoService.getByCode(id);
 	}
 	
