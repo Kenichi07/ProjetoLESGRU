@@ -1,0 +1,5 @@
+insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Carrinho de Corrida", "Veículos", "Hot Wheels", 10.50, "Escala 1:64, várias cores");
+insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Boneca Barbie", "Bonecas", "Mattel", 25.99, "Roupa rosa, acessórios inclusos");
+insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Quebra-cabeça 1000 peças", "Quebra-cabeças", "Grow", 32.00, "Tema paisagem, alta qualidade");
+insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Jogo de Xadrez", "Jogos de Tabuleiro", "Estrela", 45.00, "Peças de plástico, tabuleiro dobrável");
+insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Pelúcia Urso", "Pelúcias", "Teddy Toys", 15.75, "Macio, antialérgico, 30cm");
