@@ -3,3 +3,4 @@ insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Bone
 insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Quebra-cabeça 1000 peças", "Quebra-cabeças", "Grow", 32.00, "Tema paisagem, alta qualidade");
 insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Jogo de Xadrez", "Jogos de Tabuleiro", "Estrela", 45.00, "Peças de plástico, tabuleiro dobrável");
 insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Pelúcia Urso", "Pelúcias", "Teddy Toys", 15.75, "Macio, antialérgico, 30cm");
+insert into usuario(email, nome, senha)values ("vinicius@gmail.com", "Vinicius", "abc1234");
