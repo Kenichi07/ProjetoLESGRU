@@ -25,11 +25,6 @@ public class BrinquedoController {
 	@Autowired
 	private BrinquedoService brinquedoService;
 	
-	@GetMapping("/index")
-    public String index() {
-        return "index"; // apenas retorna o HTML
-    }
-	
 	@GetMapping("/list")
 	public List<Brinquedo> listarTodos() {
 		return brinquedoService.listAll();
