@@ -18,7 +18,7 @@ public class MenuController {
     
     @GetMapping("/admin")
     public String admin() {
-        return "admin"; // Retorna o admin.html
+        return "login"; // Retorna o admin.html
     }
 
     @GetMapping("/equipe")

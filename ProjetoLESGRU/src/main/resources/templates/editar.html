@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Editar Brinquedo</title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	<body>
+	<header>
+	   <img src="../static/images/logoLoja.jpg" alt="Logo da Loja">
+	    <h1>Editar Brinquedo</h1>
+	</header>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+	        <ul class="nav navbar-nav navbar-left">
+			<li><a href="../templates/index.html">Home</a></li>
+			<li><a href="../templates/catalogo.html">Catálogo</a></li>
+			<li><a href="/templates/login.html">Administração</a></li>
+			<li><a href="../templates/equipe.html">Equipe</a></li>
+		  </ul>
+		</div>
+	  </nav>
+	
+	        <ul class="nav navbar-nav navbar-right">
+	           
+	            <li><a href="../templates/index.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+	          </ul>
+	    </nav>
+
+	    <main>
+	        <h2>Editar Informações</h2>
+	        <hr>
+	        <form>
+	            <label>Nome:</label><br>
+	            <input type="text" name="nome" value="Boneca Ana"><br><br>
+
+	            <label>Categoria:</label><br>
+	            <input type="text" name="categoria" value="Bonecas"><br><br>
+
+	            <label>Preço:</label><br>
+	            <input type="text" name="preco" value="89,90"><br><br>
+
+	            <label>Imagem (URL ou Upload):</label><br>
+	            <input type="text" name="imagem" value="boneca.png"><br><br>
+
+				<button type="submit" class="btn btn-success">Atualizar</button>
+<a class="btn btn-primary" href="../templates/administracao.html">Voltar</a>
+
+				
+	        </form>
+	    </main>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</body>
+	</html>
