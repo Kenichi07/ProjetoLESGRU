@@ -24,18 +24,18 @@ public class BrinquedoController {
 
 	@Autowired
 	private BrinquedoService brinquedoService;
-	
+	/*
 	@GetMapping("/list")
 	public List<Brinquedo> listarTodos() {
 		return brinquedoService.listAll();
 	}
-	/*
+	*/
 	@GetMapping("/list")
 	public String listarTodos(Model model) {
 		List<Brinquedo> brinquedos = brinquedoService.listAll();
 		model.addAttribute("brinquedos", brinquedos);
 		return "lista";
-	}*/
+	}
 	
 	@GetMapping("/{id}")
 	public Brinquedo getByCode(@PathVariable("id") int id) {
@@ -47,7 +47,7 @@ public class BrinquedoController {
 		return brinquedoService.saveBrinquedo(brinquedo);
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping("/{id}/edit")
 	public Brinquedo update(@RequestBody Brinquedo brinquedo, @PathVariable Integer id) {
 		Brinquedo brinquedoUpdate = brinquedoService.getByCode(id);
 		brinquedoUpdate.setDescricao(brinquedo.getDescricao());
@@ -59,7 +59,7 @@ public class BrinquedoController {
 		return brinquedoService.saveBrinquedo(brinquedoUpdate);
 	}
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/{id}/delete")
 	public void delete(@PathVariable Integer id) {
 		brinquedoService.delete(id);
 	}

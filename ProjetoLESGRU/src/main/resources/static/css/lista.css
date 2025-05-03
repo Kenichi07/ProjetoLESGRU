@@ -37,8 +37,14 @@ table th, table td {
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-.controls a {
-  margin-right: 10px;
+.controls {
+	display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+.controls .excluir {
+	color: red;
 }
 .novo-brinquedo {
   margin-top: 10px;
