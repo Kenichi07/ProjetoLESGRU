@@ -19,10 +19,12 @@ main {
   padding: 20px;
   margin-top: 70px;
 }
+
 main h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
 .categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

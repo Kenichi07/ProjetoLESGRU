@@ -1,55 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Nome da Loja de Brinquedo</title>
-		<link rel="stylesheet" href="/css/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-	<header>
-	    <img src="/imagem/logoLoja.jpg" alt="Logo da Loja">
-	    <h1>Nome da Loja de Brinquedo</h1>
-	</header>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a href="/html/home.html"><img src="/images/logoLoja.jpg" alt="Logo da Loja"></a>
+      <h1>FunLand Toys</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">Catálogo de Brinquedos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lista.html">Administração</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipe.html">Sobre a equipe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h2>Brinquedos em Destaque</h2>
+      <hr>
+      <div class="brinquedos">
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 1">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 2">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 3">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 4">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 5">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+        <div class="brinquedo">
+          <img src="#" alt="Brinquedo 6">
+          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        </div>
+      </div>
+  </main>
 
-	<div class="container">
-	    <nav>
-	        <h2>MENU PRINCIPAL</h2>
-	        <a href="/home">Home</a>
-					<a href="/catalogo">Catálogo de Brinquedos</a>
-			    <a href="/admin">Administração</a>
-			    <a href="/equipe">Sobre a equipe</a>
-	    </nav>
-	
-	    <main>
-	        <h2>Brinquedos em Destaque</h2>
-	        <hr>
-	        <div class="brinquedos">
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 1">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 2">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 3">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 4">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 5">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	            <div class="brinquedo">
-	                <img src="#" alt="Brinquedo 6">
-	                <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-	            </div>
-	        </div>
-	    </main>
-	</div>
+  <script src="/Javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 45px;
+  color: white;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+main h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cadastro {
+  width: 400px;              /* ou qualquer largura desejada */
+  margin: 30px auto 0 auto; /* margem superior + centralização horizontal */
+  padding: 20px;
+  background-color: #f8f9fa; /* cor de fundo clara (opcional) */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+}
+
+.cadastro input {
+  width: 100%;
+}
+
+.cadastro textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.cadastro div {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
