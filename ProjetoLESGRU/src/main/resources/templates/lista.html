@@ -48,6 +48,7 @@
         <tr>
           <th>Descrição(Nome)</th>
           <th>Categoria</th>
+					<th>Marca</th>
           <th>Preço</th>
           <th>Controle</th>
         </tr>
@@ -56,16 +57,16 @@
         <tr th:each="brinquedo : ${brinquedos}">
           <td th:text="${brinquedo.descricao}"></td>
           <td th:text="${brinquedo.categoria}"></td>
-          <td th:text="${brinquedo.preco}"></td>
+					<td th:text="${brinquedo.marca}"></td>
+          <td th:text="'R$: ' + ${#numbers.formatDecimal(brinquedo.preco, 1, 2)}"></td>
           <td class="controls">
-						<a href="@{/brinquedos/{id}/edit (id=${brinquedo.id})}">Editar</a> - 
+						<a href="@{/brinquedos/{id}/edit (id=${brinquedo.id})}" class="editar">Editar</a>  
 						<a href="@{/brinquedos/{id}/delete (id=${brinquedo.id})}" class="excluir">Excluir</a>
 					</td>
         </tr>
-        <!-- Adicione mais linhas conforme necessário -->
       </tbody>
     </table>
-    <a href="/html/novoBrinquedo.html" class="novo-brinquedo">Novo Brinquedo</a>
+    <a href="@{/brinquedos/new}" class="novo-brinquedo">Novo Brinquedo</a>
   </main>
   
   <script src="/js/script.js"></script>

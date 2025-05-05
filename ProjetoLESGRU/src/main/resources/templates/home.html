@@ -43,31 +43,12 @@
     <h2>Brinquedos em Destaque</h2>
       <hr>
       <div class="brinquedos">
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 1">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
+        <div class="brinquedo" th:each="brinquedo : ${brinquedos}">
+          <img th:src="${brinquedo.url}" alt="...">
+          <div class="descricao" th:text="${brinquedo.descricao}"></div>
+					<div class="preco" th:text="'R$: ' + ${#numbers.formatDecimal(brinquedo.preco, 1, 2)}"></div>
         </div>
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 2">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-        </div>
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 3">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-        </div>
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 4">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-        </div>
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 5">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-        </div>
-        <div class="brinquedo">
-          <img src="#" alt="Brinquedo 6">
-          <div class="descricao">Descrição do Brinquedo<br>R$ #####,##</div>
-        </div>
-      </div>
+      <div>
   </main>
 
   <script src="/js/script.js"></script>

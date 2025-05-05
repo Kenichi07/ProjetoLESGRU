@@ -43,10 +43,51 @@ table tr:nth-child(even) {
   gap: 75px;
 }
 
+.controls .editar {
+	padding: 5px;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	background-color: #3498db;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
 .controls .excluir {
 	color: red;
+	padding: 5px;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	background-color: #B22222;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 .novo-brinquedo {
   margin-top: 10px;
+	padding: 10px;
   display: inline-block;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	background-color: #3498db;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
+
+.novo-brinquedo:hover {
+	background-color: #2980b9;
+}
+
+.editar:hover {
+	background-color: #2980b9;
+}
+
+.excluir:hover {
+	background-color: #FA8072;
+}
+
+
+
+
+

@@ -14,20 +14,23 @@ public class Usuario {
 	private String nome;
 	private String email;
 	private String senha;
+	private String status;
 	
 	
 	//CONTRUTORES
 	public Usuario() {}
 	
-	public Usuario(int id, String nome, String email, String senha) {
+	public Usuario(int id, String nome, String email, String senha, String status) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
+		this.status = status;
 	}
-
+	
 	//GETTERS N SETTERS
+
 	public int getId() {
 		return id;
 	}
@@ -59,4 +62,13 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
 }

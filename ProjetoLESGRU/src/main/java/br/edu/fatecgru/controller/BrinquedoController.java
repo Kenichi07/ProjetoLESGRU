@@ -37,10 +37,12 @@ public class BrinquedoController {
 		return "lista";
 	}
 	
+	/*
 	@GetMapping("/{id}")
 	public Brinquedo getByCode(@PathVariable("id") int id) {
 		return brinquedoService.getByCode(id);
 	}
+	*/
 	
 	@PostMapping("/brinquedo")
 	public Brinquedo insert(@RequestBody Brinquedo brinquedo) {
@@ -59,8 +61,18 @@ public class BrinquedoController {
 		return brinquedoService.saveBrinquedo(brinquedoUpdate);
 	}
 	
+	/*
 	@DeleteMapping("/{id}/delete")
 	public void delete(@PathVariable Integer id) {
 		brinquedoService.delete(id);
+	}
+	*/
+	
+	@GetMapping("/new")
+	public String newBrinquedo(Model model) {
+		model
+			.addAttribute("brinquedo", new Brinquedo())
+			.addAttribute("novo", true);
+		return "novoBrinquedo";
 	}
 }

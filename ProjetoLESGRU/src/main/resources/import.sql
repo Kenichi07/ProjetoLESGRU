@@ -1,6 +1,7 @@
-insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Carrinho de Corrida", "Carrinhos", "Hot Wheels", 10.50, "Escala 1:64, várias cores");
-insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Boneca Barbie", "Bonecas", "Mattel", 25.99, "Roupa rosa, acessórios inclusos");
-insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Quebra-cabeça 1000 peças", "Quebra-cabeças", "Grow", 32.00, "Tema paisagem, alta qualidade");
-insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Jogo de Xadrez", "Jogos de Tabuleiro", "Estrela", 45.00, "Peças de plástico, tabuleiro dobrável");
-insert into brinquedo(descricao, categoria, marca, preco, detalhes)values ("Pelúcia Urso", "Pelúcias", "Teddy Toys", 15.75, "Macio, antialérgico, 30cm");
-insert into usuario(email, nome, senha)values ("vinicius@gmail.com", "Vinicius", "abc1234");
+insert into brinquedo(descricao, categoria, marca, preco, url, detalhes)values ("Carrinho de Corrida", "Carrinhos", "Hot Wheels", 10.50, "https://lojamultilaser.vtexassets.com/arquivos/ids/1430290-800-auto?v=638815307353170000&width=800&height=auto&aspect=true" ,"Escala 1:64, várias cores");
+insert into brinquedo(descricao, categoria, marca, preco, url, detalhes)values ("Boneca Barbie", "Bonecas", "Mattel", 25.99, "https://milium.vtexassets.com/arquivos/ids/299618/Boneca-Barbie-Fashion-Mattel--Produto-Sortido--135825.jpg?v=638623721886570000" ,"Roupa rosa, acessórios inclusos");
+insert into brinquedo(descricao, categoria, marca, preco, url, detalhes)values ("Quebra-cabeça 1000 peças", "Quebra-cabeças", "Grow", 32.00, "https://lojagrow.vteximg.com.br/arquivos/ids/172963-1000-1000/04594_GROW_P1000_Era_Uma_Vez.jpg?v=638627998949570000" ,"Tema paisagem, alta qualidade");
+insert into brinquedo(descricao, categoria, marca, preco, url, detalhes)values ("Jogo de Xadrez", "Jogos de Tabuleiro", "Estrela", 45.00, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhfuaraRChG2hOTN2MTuP9Be-u0ZyK1ScYdQ&s" ,"Peças de plástico, tabuleiro dobrável");
+insert into brinquedo(descricao, categoria, marca, preco, url, detalhes)values ("Pelúcia Urso", "Pelúcias", "Teddy Toys", 15.75, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXsENwqPzwNCWMlzg9GEunUnhrqJczzR-DA&s" ,"Macio, antialérgico, 30cm");
+insert into usuario(email, nome, senha, status)values ("vinicius@gmail.com", "Vinicius", "abc1234", "admin");
+insert into usuario(email, nome, senha, status)values ("gustavo@gmail.com", "Gustavo", "1234", "usuario");

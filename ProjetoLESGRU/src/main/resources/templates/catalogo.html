@@ -44,17 +44,9 @@
     <h2>Catálogo de Brinquedos :: categorias</h2>
       <hr>
       <div class="categorias">
-        <div class="categoria">
-          <a href="/html/categoria.html"><img src="#" alt="Categoria 1"></a>
-          <div class="descricao">Nome da Categoria</div>
-        </div>
-        <div class="categoria">
-          <a href="/html/categoria.html"><img src="#" alt="Categoria 2"></a>
-          <div class="descricao">Nome da Categoria</div>
-        </div>
-        <div class="categoria">
-          <a href="/html/categoria.html"><img src="#" alt="Categoria 3"></a>
-          <div class="descricao">Nome da Categoria</div>
+        <div class="categoria" th:each="brinquedo : ${brinquedos}">
+          <a href="@{/}"><img th:src="${brinquedo.url}" alt="..."></a>
+          <div class="descricao" th:text="${brinquedo.categoria}"></div>
         </div>
       </div>
   </main>
