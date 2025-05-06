@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Brinquedo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/brinquedo.css">
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a href="/html/home.html"><img src="/imagem/logoLoja.jpg" alt="Logo da Loja"></a>
+      <a th:href="@{/home}"><img src="/imagem/logoLoja.jpg" alt="Logo da Loja"></a>
       <h1>FunLand Toys</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="catalogo.html">Catálogo de Brinquedos</a>
+              <a class="nav-link" th:href="@{/catalogo}">Catálogo de Brinquedos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="lista.html">Administração</a>
+              <a class="nav-link" th:href="@{/usuario/login}">Administração</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="equipe.html">Sobre a equipe</a>
+              <a class="nav-link" th:href="@{/equipe}">Sobre a equipe</a>
             </li>
           </ul>
         </div>
@@ -41,20 +41,19 @@
   </nav>
 
   <main>
-    <h2>Catálogo de Brinquedos :: nome da categoria :: nome do brinquedo</h2>
+    <h2>Catálogo de Brinquedos :: <span th:text="${brinquedo.categoria}"></span> :: <span th:text="${brinquedo.descricao}"></span></h2>
       <hr>
-      <div class="product-area">
-        <div class="product-left">Imagem Brinquedo</div>
+      <div class="product-area" th:object="${brinquedo}">
+        <div class="product-left"><img th:src="${brinquedo.url}" alt="..."></div>
         <div class="product-right">
-          <div class="codigo">Código do Brinquedo</div>
-          <div class="descricao">Descrição do Brinquedo</div>
-          <div class="preco">R$ ####,##</div>
+          <div class="descricao" th:text="*{descricao}"></div>
+          <div class="preco" th:text="'R$: ' + ${#numbers.formatDecimal(brinquedo.preco, 1, 2)}"></div>
         </div>
       </div>
 
       <div class="product-details-box">
         <h3>Detalhes sobre o brinquedo:</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p th:text="${brinquedo.detalhes}"></p>
       </div>
   </main>
 

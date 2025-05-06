@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import br.edu.fatecgru.model.entity.Brinquedo;
 import br.edu.fatecgru.service.BrinquedoService;
 
@@ -44,11 +45,32 @@ public class BrinquedoController {
 	}
 	*/
 	
+	/*
 	@PostMapping("/brinquedo")
 	public Brinquedo insert(@RequestBody Brinquedo brinquedo) {
 		return brinquedoService.saveBrinquedo(brinquedo);
 	}
+	*/
 	
+	@GetMapping("/{id}/brinquedo")
+	public String brinquedo(Model model, @PathVariable Integer id) {
+		Brinquedo brinquedo = brinquedoService.getByCode(id);
+		model
+			.addAttribute("brinquedo", brinquedo);
+		return "brinquedo";
+	}
+	
+	
+	@GetMapping("/{id}/edit")
+	public String editAluno(Model model, @PathVariable Integer id) {
+		Brinquedo brinquedo = brinquedoService.getByCode(id);
+		model
+			.addAttribute("brinquedo", brinquedo)
+			.addAttribute("novo", false);
+		return "form";
+	}
+	
+	/*
 	@PutMapping("/{id}/edit")
 	public Brinquedo update(@RequestBody Brinquedo brinquedo, @PathVariable Integer id) {
 		Brinquedo brinquedoUpdate = brinquedoService.getByCode(id);
@@ -60,19 +82,26 @@ public class BrinquedoController {
 		
 		return brinquedoService.saveBrinquedo(brinquedoUpdate);
 	}
-	
-	/*
-	@DeleteMapping("/{id}/delete")
-	public void delete(@PathVariable Integer id) {
-		brinquedoService.delete(id);
-	}
 	*/
+	
+	@GetMapping("/{id}/delete")
+	public String delete(@PathVariable Integer id) {
+		brinquedoService.delete(id);
+		return "redirect:/brinquedos/list";
+	}
+	
 	
 	@GetMapping("/new")
 	public String newBrinquedo(Model model) {
 		model
 			.addAttribute("brinquedo", new Brinquedo())
 			.addAttribute("novo", true);
-		return "novoBrinquedo";
+		return "form";
+	}
+	
+	@PostMapping("/save")
+	public String saveAluno(Brinquedo brinquedo) {
+		brinquedoService.saveBrinquedo(brinquedo);
+		return "redirect:/brinquedos/list";
 	}
 }

@@ -30,4 +30,8 @@ public class UsuarioService {
 		usuarioRepository.deleteById(id);
 	}
 	
+	public Usuario autenticar(String login, String senha) {
+        return usuarioRepository.findByLoginAndSenha(login, senha).orElse(null);
+    }
+	
 }

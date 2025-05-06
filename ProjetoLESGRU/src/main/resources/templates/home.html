@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a href="/html/home.html"><img src="/imagem/logoLoja.jpg" alt="Logo da Loja"></a>
+      <a th:href="@{/home}"><img src="/imagem/logoLoja.jpg" alt="Logo da Loja"></a>
       <h1>FunLand Toys</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
               <a class="nav-link" th:href="@{/catalogo}">Catálogo de Brinquedos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" th:href="@{/brinquedos/list}">Administração</a>
+              <a class="nav-link" th:href="@{/usuario/login}">Administração</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" th:href="@{/equipe}">Sobre a equipe</a>
@@ -44,7 +44,7 @@
       <hr>
       <div class="brinquedos">
         <div class="brinquedo" th:each="brinquedo : ${brinquedos}">
-          <img th:src="${brinquedo.url}" alt="...">
+          <a th:href="@{/brinquedos/{id}/brinquedo (id=${brinquedo.id})}"><img th:src="${brinquedo.url}" alt="..."></a>
           <div class="descricao" th:text="${brinquedo.descricao}"></div>
 					<div class="preco" th:text="'R$: ' + ${#numbers.formatDecimal(brinquedo.preco, 1, 2)}"></div>
         </div>

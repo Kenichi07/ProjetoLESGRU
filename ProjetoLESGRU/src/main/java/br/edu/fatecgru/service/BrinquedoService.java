@@ -1,8 +1,11 @@
 package br.edu.fatecgru.service;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import br.edu.fatecgru.model.entity.Brinquedo;
@@ -30,4 +33,10 @@ public class BrinquedoService {
 		brinquedoRepository.deleteById(id);
 	}
 	
+	public List<Brinquedo> listMaisBaratos(int limite) {
+	    return brinquedoRepository.findAll().stream()
+	        .sorted(Comparator.comparing(Brinquedo::getPreco))
+	        .limit(limite)
+	        .toList();
+	}
 }

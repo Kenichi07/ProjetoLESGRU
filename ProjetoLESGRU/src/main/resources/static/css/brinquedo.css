@@ -39,6 +39,11 @@ main h2 {
   margin-right: 30px;
 }
 
+.product-left img {
+	width: 200px;
+	height: 200px;
+}
+
 .product-right {
   display: flex;
   flex-direction: column;
@@ -62,7 +67,7 @@ main h2 {
 
 .product-details-box {
   margin-top: 30px;
-  border: 2px dashed #aaa;
+  border: 2px solid #aaa;
   padding: 15px;
   border-radius: 10px;
 }

@@ -36,18 +36,13 @@ public class MenuController {
 	
     @GetMapping("/home")
 	public String listarTodos(Model model) {
-		List<Brinquedo> brinquedos = brinquedoService.listAll();
-		model.addAttribute("brinquedos", brinquedos);
+		List<Brinquedo> brinquedos = brinquedoService.listMaisBaratos(6);
+	    model.addAttribute("brinquedos", brinquedos);
 		return "home";
 	}
-    
-    @GetMapping("/admin")
-    public String admin() {
-        return "lista"; // Retorna o admin.html
-    }
 
     @GetMapping("/equipe")
     public String equipe() {
-        return "equipe"; // Retorna o equipe.html
+        return "equipe"; 
     }
 }

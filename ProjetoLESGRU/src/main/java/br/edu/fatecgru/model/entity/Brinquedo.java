@@ -18,6 +18,7 @@ public class Brinquedo {
 	private float preco;
 	@Column(columnDefinition = "LONGTEXT")
 	private String url;
+	@Column(columnDefinition = "LONGTEXT")
 	private String detalhes;
 	
 	//Construtores
