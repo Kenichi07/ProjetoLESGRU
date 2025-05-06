@@ -52,6 +52,13 @@ public class BrinquedoController {
 	}
 	*/
 	
+	@GetMapping("/{categoria}/brinquedos")
+	public String brinquedo(Model model, @PathVariable String categoria) {
+		List<Brinquedo> brinquedos = brinquedoService.listBrinquedos(categoria);
+		model.addAttribute("brinquedos", brinquedos);
+		return "brinquedos";
+	}
+	
 	@GetMapping("/{id}/brinquedo")
 	public String brinquedo(Model model, @PathVariable Integer id) {
 		Brinquedo brinquedo = brinquedoService.getByCode(id);

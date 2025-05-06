@@ -39,4 +39,8 @@ public class BrinquedoService {
 	        .limit(limite)
 	        .toList();
 	}
+	
+	public List<Brinquedo> listBrinquedos(String categoria) {
+	    return brinquedoRepository.findByCategoriaIgnoreCase(categoria);
+	}
 }

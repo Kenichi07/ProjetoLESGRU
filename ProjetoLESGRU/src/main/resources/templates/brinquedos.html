@@ -41,12 +41,13 @@
   </nav>
 
   <main>
-    <h2>Catálogo de Brinquedos :: categorias</h2>
+    <h2>Catálogo de Brinquedos :: categorias :: brinquedos</h2>
       <hr>
       <div class="categorias">
         <div class="categoria" th:each="brinquedo : ${brinquedos}">
-          <a th:href="@{/brinquedos/{categoria}/brinquedos (categoria=${brinquedo.categoria})}"><img th:src="${brinquedo.url}" alt="..."></a>
-          <div class="descricao" th:text="${brinquedo.categoria}"></div>
+          <a th:href="@{/brinquedos/{id}/brinquedo (id=${brinquedo.id})}"><img th:src="${brinquedo.url}" alt="..."></a>
+					<div class="descricao" th:text="*{descricao}"></div>
+      		<div class="preco" th:text="'R$: ' + ${#numbers.formatDecimal(brinquedo.preco, 1, 2)}"></div>
         </div>
       </div>
   </main>

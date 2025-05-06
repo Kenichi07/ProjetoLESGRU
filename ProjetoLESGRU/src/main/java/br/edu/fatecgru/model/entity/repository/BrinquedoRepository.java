@@ -14,4 +14,6 @@ public interface BrinquedoRepository extends JpaRepository<Brinquedo, Integer>{
 	@Query("SELECT b FROM Brinquedo b ORDER BY b.preco ASC LIMIT 6")
 	List<Brinquedo> findTop6ByOrderByPrecoAsc();
 
+	List<Brinquedo> findByCategoriaIgnoreCase(String categoria);
+	
 }
